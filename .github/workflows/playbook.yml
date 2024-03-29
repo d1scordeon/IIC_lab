@@ -19,4 +19,4 @@ jobs:
     - name: Install dependencies
       run: npm install
     - name: Build code
-      run: CI=False npm run build
+      run: CI=False NODE_OPTIONS=--openssl-legacy-provider npm run build
